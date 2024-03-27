@@ -19,9 +19,9 @@ if today in birthday_dic:
         modified_letter = file.replace("[NAME]", birthday_person['name'])
 
     # 4. Send the letter generated in step 3 to that person's email address.
-    email = "g11oct2000@gmail.com"
+    email = "your@email"
     birthday_person_email = birthday_person['email']
-    password = "hwqk mvdh iejf jodu"
+    password = "password"
 
     with smtplib.SMTP(host="smtp.gmail.com", port=587) as connection:
         connection.starttls()
